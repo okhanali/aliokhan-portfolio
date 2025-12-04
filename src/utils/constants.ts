@@ -155,16 +155,16 @@ export const PROJECTS: IProjects[] = [
     githubUrl: 'https://github.com/okhanali/KickShoesProject.git',
 
     // Klasör Adı: kick-shoes
-    cover: '/public/KickShoes/shoes-kicks1.webp',
+    cover: '/KickShoes/shoes-kicks1.webp',
     images: [
-      '/public/KickShoes/shoes-kicks1.webp',
-      '/public/KickShoes/shoes-kicks2.webp',
-      '/public/KickShoes/shoes-kicks3.webp',
-      '/public/KickShoes/shoes-kicks4.webp',
-      '/public/KickShoes/shoes-kicks5.webp',
-      '/public/KickShoes/shoes-kicks6.webp',
+      '/KickShoes/shoes-kicks1.webp',
+      '/KickShoes/shoes-kicks2.webp',
+      '/KickShoes/shoes-kicks3.webp',
+      '/KickShoes/shoes-kicks4.webp',
+      '/KickShoes/shoes-kicks5.webp',
+      '/KickShoes/shoes-kicks6.webp',
     ],
-    demoVideo: '/public/KickShoes/shoes-kicks.mp4',
+    demoVideo: '/KickShoes/shoes-kicks.mp4',
   },
 
   // 2. TANSTACK HOTEL
@@ -177,13 +177,13 @@ export const PROJECTS: IProjects[] = [
     githubUrl: 'https://github.com/okhanali/TanStackHotel.git',
 
     // Klasör Adı: tanstack-hotel
-    cover: '/public/TripserHotel/tripser-hotel1.webp',
+    cover: '/TripserHotel/tripser-hotel1.webp',
     images: [
-      '/public/TripserHotel/tripser-hotel1.webp',
-      '/public/TripserHotel/tripser-hotel2.webp',
-      '/public/TripserHotel/tripser-hotel3.webp',
+      '/TripserHotel/tripser-hotel1.webp',
+      '/TripserHotel/tripser-hotel2.webp',
+      '/TripserHotel/tripser-hotel3.webp',
     ],
-    demoVideo: '/public/TripserHotel/tripser-hotel.mp4',
+    demoVideo: '/TripserHotel/tripser-hotel.mp4',
   },
 
   // 3. E-SHOP REDUX TOOLKIT
@@ -196,17 +196,17 @@ export const PROJECTS: IProjects[] = [
     githubUrl: 'https://github.com/okhanali/E-ShopReduxToolkit.git',
 
     // Klasör Adı: eshop-redux
-    cover: '/public/E-Shop/e-shop1.webp',
+    cover: '/E-Shop/e-shop1.webp',
     images: [
-      '/public/E-Shop/e-shop1.webp',
-      '/public/E-Shop/e-shop2.webp',
-      '/public/E-Shop/e-shop3.webp',
-      '/public/E-Shop/e-shop4.webp',
-      '/public/E-Shop/e-shop5.webp',
-      '/public/E-Shop/e-shop6.webp',
-      '/public/E-Shop/e-shop7.webp',
+      '/E-Shop/e-shop1.webp',
+      '/E-Shop/e-shop2.webp',
+      '/E-Shop/e-shop3.webp',
+      '/E-Shop/e-shop4.webp',
+      '/E-Shop/e-shop5.webp',
+      '/E-Shop/e-shop6.webp',
+      '/E-Shop/e-shop7.webp',
     ],
-    demoVideo: '/public/E-Shop/e-shop.mp4',
+    demoVideo: '/E-Shop/e-shop.mp4',
   },
 
   // 4. FIREBASE TODO
@@ -219,14 +219,14 @@ export const PROJECTS: IProjects[] = [
     githubUrl: 'https://github.com/okhanali/FireBaseTodo.git',
 
     // Klasör Adı: firebase-todo
-    cover: '/public/AuthTodo/auth-todo1.webp',
+    cover: '/AuthTodo/auth-todo1.webp',
     images: [
-      '/public/AuthTodo/auth-todo1.webp',
-      '/public/AuthTodo/auth-todo2.webp',
-      '/public/AuthTodo/auth-todo3.webp',
-      '/public/AuthTodo/auth-todo4.webp',
+      '/AuthTodo/auth-todo1.webp',
+      '/AuthTodo/auth-todo2.webp',
+      '/AuthTodo/auth-todo3.webp',
+      '/AuthTodo/auth-todo4.webp',
     ],
-    demoVideo: '/public/AuthTodo/auth-todo.mp4',
+    demoVideo: '/AuthTodo/auth-todo.mp4',
   },
 
   // 5. CHAT APP
@@ -239,14 +239,14 @@ export const PROJECTS: IProjects[] = [
     githubUrl: 'https://github.com/okhanali/ChatApp.git',
 
     // Klasör Adı: chat-app
-    cover: '/public/ChatApp/chat-app1.webp',
+    cover: '/ChatApp/chat-app1.webp',
     images: [
-      '/public/ChatApp/chat-app1.webp',
-      '/public/ChatApp/chat-app2.webp',
-      '/public/ChatApp/chat-app3.webp',
-      '/public/ChatApp/chat-app4.webp',
+      '/ChatApp/chat-app1.webp',
+      '/ChatApp/chat-app2.webp',
+      '/ChatApp/chat-app3.webp',
+      '/ChatApp/chat-app4.webp',
     ],
-    demoVideo: '/public/ChatApp/chat-app.mp4',
+    demoVideo: '/ChatApp/chat-app.mp4',
   },
 
   // 6. JOB TRACKER
@@ -259,13 +259,13 @@ export const PROJECTS: IProjects[] = [
     githubUrl: 'https://github.com/okhanali/JobTrackerr.git',
 
     // Klasör Adı: job-tracker
-    cover: '/public/JobTracker/job-tracker1.webp',
+    cover: '/JobTracker/job-tracker1.webp',
     images: [
-      '/public/JobTracker/job-tracker1.webp',
-      '/public/JobTracker/job-tracker2.webp',
-      '/public/JobTracker/job-tracker3.webp',
+      '/JobTracker/job-tracker1.webp',
+      '/JobTracker/job-tracker2.webp',
+      '/JobTracker/job-tracker3.webp',
     ],
-    demoVideo: '/public/JobTracker/job-tracker.mp4',
+    demoVideo: '/JobTracker/job-tracker.mp4',
   },
 
   // 7. TRANSLATE APP
@@ -278,14 +278,14 @@ export const PROJECTS: IProjects[] = [
     githubUrl: 'https://github.com/okhanali/Translate.git',
 
     // Klasör Adı: translate-app
-    cover: '/public/TranslateApp/translate-app1.webp',
+    cover: '/TranslateApp/translate-app1.webp',
     images: [
-      '/public/TranslateApp/translate-app1.webp',
-      '/public/TranslateApp/translate-app2.webp',
-      '/public/TranslateApp/translate-app3.webp',
-      '/public/TranslateApp/translate-app4.webp',
+      '/TranslateApp/translate-app1.webp',
+      '/TranslateApp/translate-app2.webp',
+      '/TranslateApp/translate-app3.webp',
+      '/TranslateApp/translate-app4.webp',
     ],
-    demoVideo: '/public/TranslateApp/translate-app.mp4',
+    demoVideo: '/TranslateApp/translate-app.mp4',
   },
 
   // 8. NOTE APP
@@ -298,14 +298,14 @@ export const PROJECTS: IProjects[] = [
     githubUrl: 'https://github.com/okhanali/NoteApp.git',
 
     // Klasör Adı: note-app
-    cover: '/public/NoteApp/note-app3.webp',
+    cover: '/NoteApp/note-app3.webp',
     images: [
-      '/public/NoteApp/note-app1.webp',
-      '/public/NoteApp/note-app2.webp',
-      '/public/NoteApp/note-app3.webp',
-      '/public/NoteApp/note-app4.webp',
+      '/NoteApp/note-app1.webp',
+      '/NoteApp/note-app2.webp',
+      '/NoteApp/note-app3.webp',
+      '/NoteApp/note-app4.webp',
     ],
-    demoVideo: '/public/NoteApp/note-app.mp4',
+    demoVideo: '/NoteApp/note-app.mp4',
   },
 
   // 9. ICE CREAM UNIT TEST
@@ -318,8 +318,8 @@ export const PROJECTS: IProjects[] = [
     githubUrl: 'https://github.com/okhanali/IceCreamUnitTestProject_CursorAi.git',
 
     // Klasör Adı: unit-test
-    cover: '/public/DropCream/drop-cream1.webp',
-    images: ['/public/DropCream/drop-cream1.webp', '/public/DropCream/drop-cream2.webp'],
-    demoVideo: '/public/DropCream/drop-cream.mp4',
+    cover: '/DropCream/drop-cream1.webp',
+    images: ['/DropCream/drop-cream1.webp', '/DropCream/drop-cream2.webp'],
+    demoVideo: '/DropCream/drop-cream.mp4',
   },
 ];

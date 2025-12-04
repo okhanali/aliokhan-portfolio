@@ -19,7 +19,7 @@ const Card: FC<CardProps> = ({ project, onClick }) => {
       interval = setInterval(() => {
         index = (index + 1) % project.images.length;
         setCurrentImg(project.images[index]);
-      }, 800);
+      }, 1000);
     }
 
     return () => clearInterval(interval);
@@ -36,8 +36,8 @@ const Card: FC<CardProps> = ({ project, onClick }) => {
       onClick={onClick}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={handleMouseLeave}
-      whileHover={{ y: -8 }}
-      className="group relative rounded-2xl overflow-hidden cursor-pointer flex flex-col h-full transition-all duration-300 shadow-md hover:shadow-xl border light:bg-white light:border-slate-200 dark:bg-slate-800/50 dark:border-white/10 dark:backdrop-blur-sm"
+      whileHover={{ y: -5 }}
+      className="group relative rounded-2xl overflow-hidden cursor-pointer flex flex-col h-full transition-all duration-300 shadow-md hover:shadow-xl border light:bg-white light:border-slate-200 dark:bg-slate-800/50 dark:border-white/10"
       role="button"
       tabIndex={0}
       onKeyDown={(e) => {
@@ -51,11 +51,11 @@ const Card: FC<CardProps> = ({ project, onClick }) => {
         <motion.img
           key={currentImg}
           src={currentImg}
-          alt={`${project.title} projesi kapak görseli`}
+          alt={`${project.title}`}
           loading="lazy"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.4 }}
+          transition={{ duration: 0.3 }}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
       </div>
@@ -66,16 +66,16 @@ const Card: FC<CardProps> = ({ project, onClick }) => {
           {project.title}
         </h3>
 
-        {/* Teknolojiler */}
-        <div className="flex flex-wrap gap-2" aria-label="Kullanılan Teknolojiler">
+        <div className="flex flex-wrap gap-2">
           {project.technologies?.slice(0, 3).map((tech, i) => (
             <span
               key={i}
-              className="text-xs px-2.5 py-1 rounded-md font-medium border light:bg-slate-100 light:text-slate-600 light:border-slate-200 dark:bg-white/5 dark:text-slate-300 dark:border-white/10"
+              className="text-xs px-2.5 py-1 rounded-md font-medium border light:bg-slate-100 light:text-slate-600 dark:bg-white/5 dark:text-slate-300 dark:border-white/10"
             >
               {tech}
             </span>
           ))}
+
           {project.technologies && project.technologies.length > 3 && (
             <span className="text-xs px-1 py-1 font-medium light:text-slate-500 dark:text-slate-500">
               +{project.technologies.length - 3}
@@ -83,12 +83,8 @@ const Card: FC<CardProps> = ({ project, onClick }) => {
           )}
         </div>
 
-        {/* Buton */}
         <div className="mt-auto pt-2">
-          <button
-            className="w-full py-2.5 rounded-xl font-semibold text-white shadow-lg bg-gradient-to-r from-cyan-500 to-purple-600 opacity-90 group-hover:opacity-100 transition-all active:scale-95 cursor-pointer"
-            aria-label={`${project.title} projesinin detaylarını gör`}
-          >
+          <button className="w-full py-2.5 rounded-xl font-semibold text-white shadow-lg bg-gradient-to-r from-cyan-500 to-purple-600 opacity-90 group-hover:opacity-100 transition-all active:scale-95">
             Detayları Gör
           </button>
         </div>
