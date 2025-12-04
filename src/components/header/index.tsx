@@ -1,16 +1,17 @@
 import type { FC } from 'react';
-import Navbar from '../navbar';
+
 import Typewriter from 'typewriter-effect';
 import { Link } from 'react-router-dom';
+import Navbar from '../navbar';
 
 const Header: FC = () => {
   return (
     <header className="flex justify-center pt-8 px-4 relative z-50">
       <div
-        className="flex items-center justify-between w-full max-w-7xl rounded-full shadow-lg backdrop-blur-md border transition-all duration-300
+        className="flex items-center justify-between w-full max-w-7xl rounded-full shadow-lg border transition-all duration-300
                       py-3 px-4 md:px-6 lg:px-8 md:py-4
-                      light:bg-white/80 light:border-black/5 light:shadow-slate-200
-                      dark:bg-slate-900/80 dark:border-white/10 dark:shadow-black/50"
+                      light:bg-white/95 light:border-black/5 light:shadow-slate-200
+                      dark:bg-slate-900/95 dark:border-white/10 dark:shadow-black/50"
       >
         {/* (LOGO)  */}
         <div className="flex-1 min-w-0 flex items-center mr-2 lg:mr-4">

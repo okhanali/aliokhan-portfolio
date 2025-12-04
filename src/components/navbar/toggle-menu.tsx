@@ -7,15 +7,13 @@ import ThemeToggle from './theme-toggle';
 
 // --- ANIMASYON AYARLARI ---
 const menuVars: Variants = {
-  initial: { x: '100%', opacity: 0 },
+  initial: { x: '100%' },
   animate: {
     x: 0,
-    opacity: 1,
     transition: { duration: 0.4, ease: [0.33, 1, 0.68, 1] },
   },
   exit: {
     x: '100%',
-    opacity: 0,
     transition: { duration: 0.4, ease: [0.33, 1, 0.68, 1] },
   },
 };
@@ -71,11 +69,9 @@ const ToggleMenu: FC = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={closeMenu}
-              className="fixed inset-0 z-40 bg-black/20 backdrop-blur-sm"
+              className="fixed inset-0 z-40 bg-black/60"
               aria-hidden="true"
             />
-
-            {/* 2. Sidebar */}
             <motion.div
               id="mobile-navigation"
               variants={menuVars}
@@ -85,9 +81,8 @@ const ToggleMenu: FC = () => {
               role="dialog"
               aria-modal="true"
               aria-label="Mobil Navigasyon Menüsü"
-              className="fixed top-0 right-0 h-screen w-72 z-50 flex flex-col items-center justify-center shadow-2xl border-l light:bg-white/95 light:border-slate-200 dark:bg-slate-900/95 dark:border-white/10 backdrop-blur-xl"
+              className="fixed top-0 right-0 h-screen w-72 z-50 flex flex-col items-center justify-center shadow-2xl border-l light:bg-white/95 light:border-slate-200 dark:bg-slate-900/95 dark:border-white/10"
             >
-              {/* Linkler Container */}
               <motion.nav
                 variants={containerVars}
                 initial="initial"
