@@ -5,8 +5,8 @@ import Footer from '../components/footer';
 import useTheme from '../hooks/useTheme';
 import BackgroundGlow from '../components/background-grow';
 
-import darkBg from '../assets/darkmodehome.jpg';
-import lightBg from '../assets/lightmodehome.png';
+import darkBg from '../assets/darkmodehome.webp';
+import lightBg from '../assets/lightmodehome.webp';
 
 const MainLayout: FC = () => {
   const { theme } = useTheme();
