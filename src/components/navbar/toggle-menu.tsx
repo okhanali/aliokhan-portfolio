@@ -5,34 +5,48 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { NAV_LINKS, SOCIAL_LINKS } from '../../utils/constants';
 import ThemeToggle from './theme-toggle';
 
-// --- ANIMASYON AYARLARI ---
 const menuVars: Variants = {
   initial: { x: '100%' },
   animate: {
     x: 0,
-    transition: { duration: 0.4, ease: [0.33, 1, 0.68, 1] },
+    transition: { duration: 0.3, ease: 'easeOut' },
   },
   exit: {
     x: '100%',
-    transition: { duration: 0.4, ease: [0.33, 1, 0.68, 1] },
+    transition: { duration: 0.3, ease: 'easeIn' },
   },
 };
 
 const containerVars: Variants = {
-  initial: { transition: { staggerChildren: 0.09, staggerDirection: -1 } },
-  open: { transition: { delayChildren: 0.2, staggerChildren: 0.09, staggerDirection: 1 } },
+  initial: { transition: { staggerChildren: 0.05, staggerDirection: -1 } },
+  open: { transition: { delayChildren: 0.1, staggerChildren: 0.05, staggerDirection: 1 } },
 };
 
 const mobileLinkVars: Variants = {
   initial: { y: 20, opacity: 0 },
-  open: { y: 0, opacity: 1, transition: { duration: 0.4, ease: 'easeOut' } },
+  open: { y: 0, opacity: 1, transition: { duration: 0.3, ease: 'easeOut' } },
 };
 
 const ToggleMenu: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen((prev) => !prev);
-  const closeMenu = () => setIsOpen(false);
+  const toggleMenu = () => {
+    setIsOpen((prev) => {
+      const newState = !prev;
+
+      if (typeof document !== 'undefined') {
+        document.body.style.overflow = newState ? 'hidden' : 'unset';
+      }
+      return newState;
+    });
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
+    if (typeof document !== 'undefined') {
+      document.body.style.overflow = 'unset';
+    }
+  };
 
   return (
     <div className="md:hidden">
@@ -64,6 +78,7 @@ const ToggleMenu: FC = () => {
       <AnimatePresence>
         {isOpen && (
           <>
+            {/* 1. Backdrop (Siyah Perde) */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -72,6 +87,8 @@ const ToggleMenu: FC = () => {
               className="fixed inset-0 z-40 bg-black/60"
               aria-hidden="true"
             />
+
+            {/* 2. Sidebar (Menü) */}
             <motion.div
               id="mobile-navigation"
               variants={menuVars}
@@ -81,8 +98,10 @@ const ToggleMenu: FC = () => {
               role="dialog"
               aria-modal="true"
               aria-label="Mobil Navigasyon Menüsü"
-              className="fixed top-0 right-0 h-screen w-72 z-50 flex flex-col items-center justify-center shadow-2xl border-l light:bg-white/95 light:border-slate-200 dark:bg-slate-900/95 dark:border-white/10"
+              className="fixed top-0 right-0 h-screen w-72 z-50 flex flex-col items-center justify-center shadow-2xl border-l light:bg-white light:border-slate-200 dark:bg-slate-900 dark:border-white/10"
+              style={{ willChange: 'transform' }}
             >
+              {/* Linkler Container */}
               <motion.nav
                 variants={containerVars}
                 initial="initial"

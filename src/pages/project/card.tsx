@@ -32,9 +32,6 @@ const Card: FC<CardProps> = ({ project, onClick }) => {
 
   return (
     <motion.article
-      layoutId={`card-${project.id}`}
-      // Kartın kendisine tıklanınca da açılmasını istiyorsan burayı açabilirsin:
-      // onClick={onClick}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={handleMouseLeave}
       whileHover={{ y: -5 }}
@@ -88,8 +85,8 @@ const Card: FC<CardProps> = ({ project, onClick }) => {
           <button
             type="button"
             onClick={(e) => {
-              e.stopPropagation(); // Kartın onClick'ini engelle (varsa)
-              onClick(); // Modalı aç
+              e.stopPropagation();
+              onClick();
             }}
             className="w-full py-2.5 rounded-xl font-semibold text-white shadow-lg bg-gradient-to-r from-cyan-500 to-purple-600 opacity-90 group-hover:opacity-100 transition-all active:scale-95 cursor-pointer"
           >
