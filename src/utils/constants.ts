@@ -153,8 +153,6 @@ export const PROJECTS: IProjects[] = [
       'Modern ve şık bir ayakkabı satış platformu. Kullanıcıların ürünleri filtreleyebildiği, sepete ekleyebildiği ve detaylı ürün incelemesi yapabildiği kapsamlı bir e-ticaret arayüzü.',
     technologies: ['React', 'TanStack Query', 'TypeScript', 'TailwindCSS'],
     githubUrl: 'https://github.com/okhanali/KickShoesProject.git',
-
-    // Klasör Adı: kick-shoes
     cover: '/KickShoes/shoes-kicks1.webp',
     images: [
       '/KickShoes/shoes-kicks1.webp',
@@ -164,7 +162,6 @@ export const PROJECTS: IProjects[] = [
       '/KickShoes/shoes-kicks5.webp',
       '/KickShoes/shoes-kicks6.webp',
     ],
-    demoVideo: '/KickShoes/shoes-kicks.mp4',
   },
 
   // 2. TANSTACK HOTEL
@@ -175,15 +172,12 @@ export const PROJECTS: IProjects[] = [
       'TanStack Query (React Query) kütüphanesinin gücünü kullanarak geliştirilen, sunucu durum yönetiminin (server state) optimize edildiği performanslı bir otel rezervasyon sistemi.',
     technologies: ['React', 'TanStack Query', 'TypeScript', 'TailwindCSS'],
     githubUrl: 'https://github.com/okhanali/TanStackHotel.git',
-
-    // Klasör Adı: tanstack-hotel
     cover: '/TripserHotel/tripser-hotel1.webp',
     images: [
       '/TripserHotel/tripser-hotel1.webp',
       '/TripserHotel/tripser-hotel2.webp',
       '/TripserHotel/tripser-hotel3.webp',
     ],
-    demoVideo: '/TripserHotel/tripser-hotel.mp4',
   },
 
   // 3. E-SHOP REDUX TOOLKIT
@@ -194,8 +188,6 @@ export const PROJECTS: IProjects[] = [
       'Global state yönetimi için Redux Toolkit kullanılan, karmaşık sepet mantığını ve ürün yönetimini asenkron işlemlerle (Thunk) yöneten alışveriş uygulaması.',
     technologies: ['React', 'Redux Toolkit', 'Axios', 'TailwindCSS', 'FakeStore API'],
     githubUrl: 'https://github.com/okhanali/E-ShopReduxToolkit.git',
-
-    // Klasör Adı: eshop-redux
     cover: '/E-Shop/e-shop1.webp',
     images: [
       '/E-Shop/e-shop1.webp',
@@ -206,7 +198,6 @@ export const PROJECTS: IProjects[] = [
       '/E-Shop/e-shop6.webp',
       '/E-Shop/e-shop7.webp',
     ],
-    demoVideo: '/E-Shop/e-shop.mp4',
   },
 
   // 4. FIREBASE TODO
@@ -214,11 +205,9 @@ export const PROJECTS: IProjects[] = [
     id: 'firebase-todo',
     title: 'Firebase Todo App',
     description:
-      'Bulut tabanlı (Cloud Firestore) veritabanı ile tam senkronize çalışan, gerçek zamanlı veri ekleme, silme ve güncelleme (CRUD) işlemlerini barındıran görev takip uygulaması. Kayıt Ol (Sign Up) ve Giriş Yap (Sign In) Google ile Giriş (Firebase Authentication)E-posta doğrulama ve şifre sıfırlama',
+      'Bulut tabanlı (Cloud Firestore) veritabanı ile tam senkronize çalışan, gerçek zamanlı veri ekleme, silme ve güncelleme (CRUD) işlemlerini barındıran görev takip uygulaması.',
     technologies: ['React', 'Firebase', 'Firestore', 'TailwindCSS'],
     githubUrl: 'https://github.com/okhanali/FireBaseTodo.git',
-
-    // Klasör Adı: firebase-todo
     cover: '/AuthTodo/auth-todo1.webp',
     images: [
       '/AuthTodo/auth-todo1.webp',
@@ -226,7 +215,6 @@ export const PROJECTS: IProjects[] = [
       '/AuthTodo/auth-todo3.webp',
       '/AuthTodo/auth-todo4.webp',
     ],
-    demoVideo: '/AuthTodo/auth-todo.mp4',
   },
 
   // 5. CHAT APP
@@ -237,8 +225,6 @@ export const PROJECTS: IProjects[] = [
       'Kullanıcıların anlık olarak mesajlaşabildiği, Google ile giriş yapma (Auth) özelliğine sahip, modern arayüzlü gerçek zamanlı sohbet odası.',
     technologies: ['React', 'Firebase Auth', 'Firestore', 'TailwindCSS'],
     githubUrl: 'https://github.com/okhanali/ChatApp.git',
-
-    // Klasör Adı: chat-app
     cover: '/ChatApp/chat-app1.webp',
     images: [
       '/ChatApp/chat-app1.webp',
@@ -246,7 +232,6 @@ export const PROJECTS: IProjects[] = [
       '/ChatApp/chat-app3.webp',
       '/ChatApp/chat-app4.webp',
     ],
-    demoVideo: '/ChatApp/chat-app.mp4',
   },
 
   // 6. JOB TRACKER
@@ -257,15 +242,12 @@ export const PROJECTS: IProjects[] = [
       'İş başvurularının durumunu (Mülakat, Red, Kabul) takip etmek için geliştirilen, istatistiksel verileri görselleştiren yönetim paneli.',
     technologies: ['React', 'Redux', 'TailwindCSS'],
     githubUrl: 'https://github.com/okhanali/JobTrackerr.git',
-
-    // Klasör Adı: job-tracker
     cover: '/JobTracker/job-tracker1.webp',
     images: [
       '/JobTracker/job-tracker1.webp',
       '/JobTracker/job-tracker2.webp',
       '/JobTracker/job-tracker3.webp',
     ],
-    demoVideo: '/JobTracker/job-tracker.mp4',
   },
 
   // 7. TRANSLATE APP
@@ -276,8 +258,6 @@ export const PROJECTS: IProjects[] = [
       'Çoklu dil desteği sunan, API entegrasyonu ile metinleri anlık olarak çevirebilen ve dil algılama yeteneğine sahip çeviri aracı.',
     technologies: ['React', 'RapidAPI', 'Axios', 'Redux', 'TailwindCSS'],
     githubUrl: 'https://github.com/okhanali/Translate.git',
-
-    // Klasör Adı: translate-app
     cover: '/TranslateApp/translate-app1.webp',
     images: [
       '/TranslateApp/translate-app1.webp',
@@ -285,7 +265,6 @@ export const PROJECTS: IProjects[] = [
       '/TranslateApp/translate-app3.webp',
       '/TranslateApp/translate-app4.webp',
     ],
-    demoVideo: '/TranslateApp/translate-app.mp4',
   },
 
   // 8. NOTE APP
@@ -293,11 +272,9 @@ export const PROJECTS: IProjects[] = [
     id: 'note-app',
     title: 'Note Organizer',
     description:
-      'Kategorize edilebilir, etiketlenebilir ve düzenlenebilir not alma uygulaması. Veri kalıcılığı ve modern CRUD prensiplerine odaklanılarak geliştirildi. Markdown desteği sayesinde notlar zengin metin olarak saklanır.',
+      'Kategorize edilebilir, etiketlenebilir ve düzenlenebilir not alma uygulaması. Veri kalıcılığı ve modern CRUD prensiplerine odaklanılarak geliştirildi.',
     technologies: ['React', 'TypeScript', 'TailwindCSS', 'Redux'],
     githubUrl: 'https://github.com/okhanali/NoteApp.git',
-
-    // Klasör Adı: note-app
     cover: '/NoteApp/note-app3.webp',
     images: [
       '/NoteApp/note-app1.webp',
@@ -305,7 +282,6 @@ export const PROJECTS: IProjects[] = [
       '/NoteApp/note-app3.webp',
       '/NoteApp/note-app4.webp',
     ],
-    demoVideo: '/NoteApp/note-app.mp4',
   },
 
   // 9. ICE CREAM UNIT TEST
@@ -313,13 +289,10 @@ export const PROJECTS: IProjects[] = [
     id: 'unit-test',
     title: 'Ice Cream Shop',
     description:
-      'Uygulama unit test kapsamına alınmış olup, UI davranışları ve Redux etkileşimleri test edilmiştir.Kullanıcılar, ürünleri görüntüleyebilir, sepete ekleyebilir, miktarları değiştirebilir ve sipariş işlemini tamamlayabilir.',
+      'Uygulama unit test kapsamına alınmış olup, UI davranışları ve Redux etkileşimleri test edilmiştir.',
     technologies: ['React', 'TailwindCSS', 'Redux', 'TDD'],
     githubUrl: 'https://github.com/okhanali/IceCreamUnitTestProject_CursorAi.git',
-
-    // Klasör Adı: unit-test
     cover: '/DropCream/drop-cream1.webp',
     images: ['/DropCream/drop-cream1.webp', '/DropCream/drop-cream2.webp'],
-    demoVideo: '/DropCream/drop-cream.mp4',
   },
 ];

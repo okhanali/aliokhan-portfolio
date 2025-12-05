@@ -17,8 +17,8 @@ const Card: FC<CardProps> = ({ project, onClick }) => {
     if (isHovered && project.images && project.images.length > 1) {
       let index = 0;
       interval = setInterval(() => {
-        index = (index + 1) % project.images.length;
-        setCurrentImg(project.images[index]);
+        index = (index + 1) % project.images!.length;
+        setCurrentImg(project.images![index]);
       }, 1000);
     }
 
@@ -33,7 +33,8 @@ const Card: FC<CardProps> = ({ project, onClick }) => {
   return (
     <motion.article
       layoutId={`card-${project.id}`}
-      onClick={onClick}
+      // Kartın kendisine tıklanınca da açılmasını istiyorsan burayı açabilirsin:
+      // onClick={onClick}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={handleMouseLeave}
       whileHover={{ y: -5 }}
@@ -84,7 +85,14 @@ const Card: FC<CardProps> = ({ project, onClick }) => {
         </div>
 
         <div className="mt-auto pt-2">
-          <button className="w-full py-2.5 rounded-xl font-semibold text-white shadow-lg bg-gradient-to-r from-cyan-500 to-purple-600 opacity-90 group-hover:opacity-100 transition-all active:scale-95">
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation(); // Kartın onClick'ini engelle (varsa)
+              onClick(); // Modalı aç
+            }}
+            className="w-full py-2.5 rounded-xl font-semibold text-white shadow-lg bg-gradient-to-r from-cyan-500 to-purple-600 opacity-90 group-hover:opacity-100 transition-all active:scale-95 cursor-pointer"
+          >
             Detayları Gör
           </button>
         </div>

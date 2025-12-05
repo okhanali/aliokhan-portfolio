@@ -42,6 +42,5 @@ export interface IProjects {
 
   // GÖRSEL MEDYA ALANLARI
   cover: string;
-  images: string[];
-  demoVideo: string;
+  images?: string[];
 }
