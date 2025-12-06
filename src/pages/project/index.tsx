@@ -86,7 +86,11 @@ const Projects: FC = () => {
                     <motion.div
                       key="modal-card"
                       layoutId={`card-${selectedId}`}
-                      className="w-full max-w-4xl max-h-[90vh] rounded-2xl overflow-hidden shadow-2xl pointer-events-auto flex flex-col relative bg-white dark:bg-slate-900 border dark:border-white/10"
+                      className="
+                        w-full max-w-4xl max-h-[90vh] rounded-2xl overflow-hidden shadow-2xl pointer-events-auto flex flex-col relative border
+                        light:bg-white light:border-transparent 
+                        dark:bg-slate-900 dark:border-white/10
+                      "
                     >
                       <button
                         onClick={() => setSelectedId(null)}
@@ -96,7 +100,7 @@ const Projects: FC = () => {
                       </button>
 
                       {/* SLIDER ALANI */}
-                      <div className="w-full h-64 md:h-96 bg-gray-100 dark:bg-slate-800 relative overflow-hidden group">
+                      <div className="w-full h-64 md:h-96 relative overflow-hidden group light:bg-gray-100 dark:bg-slate-800">
                         <AnimatePresence mode="wait">
                           <motion.img
                             key={currentSlideIndex}
@@ -129,7 +133,8 @@ const Projects: FC = () => {
                         )}
                       </div>
 
-                      <div className="p-6 md:p-8 overflow-y-auto light:bg-white dark:bg-slate-900 flex-1">
+                      {/* İÇERİK ALANI */}
+                      <div className="p-6 md:p-8 overflow-y-auto flex-1 light:bg-white dark:bg-slate-900">
                         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
                           <h2 className="text-2xl md:text-3xl font-bold light:text-slate-900 dark:text-white">
                             {selectedProject.title}
@@ -139,7 +144,11 @@ const Projects: FC = () => {
                             href={selectedProject.githubUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold transition-all hover:scale-105 shadow-md bg-slate-800 text-white hover:bg-slate-700"
+                            className="
+                              flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold transition-all hover:scale-105 shadow-md 
+                              light:bg-slate-800 light:text-white light:hover:bg-slate-700
+                              dark:bg-slate-700 dark:text-white dark:hover:bg-slate-600
+                            "
                           >
                             <FaGithub size={20} />
                             <span>GitHub</span>
@@ -150,7 +159,11 @@ const Projects: FC = () => {
                           {selectedProject.technologies?.map((tech, i) => (
                             <span
                               key={i}
-                              className="px-3 py-1 text-sm font-medium border rounded-full light:bg-slate-100 dark:bg-white/5 dark:text-slate-300"
+                              className="
+                                px-3 py-1 text-sm font-medium border rounded-full 
+                                light:bg-slate-100 light:text-slate-700 light:border-slate-200
+                                dark:bg-white/5 dark:text-slate-300 dark:border-white/10
+                              "
                             >
                               {tech}
                             </span>

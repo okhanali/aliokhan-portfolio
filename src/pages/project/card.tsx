@@ -35,7 +35,11 @@ const Card: FC<CardProps> = ({ project, onClick }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={handleMouseLeave}
       whileHover={{ y: -5 }}
-      className="group relative rounded-2xl overflow-hidden cursor-pointer flex flex-col h-full transition-all duration-300 shadow-md hover:shadow-xl border light:bg-white light:border-slate-200 dark:bg-slate-800/50 dark:border-white/10"
+      className="
+        group relative rounded-2xl overflow-hidden cursor-pointer flex flex-col h-full transition-all duration-300 shadow-md hover:shadow-xl border 
+        light:bg-white light:border-slate-200 
+        dark:bg-slate-800/50 dark:border-white/10
+      "
       role="button"
       tabIndex={0}
       onKeyDown={(e) => {
@@ -45,7 +49,7 @@ const Card: FC<CardProps> = ({ project, onClick }) => {
       }}
     >
       {/* --- RESİM ALANI --- */}
-      <div className="relative h-52 overflow-hidden bg-gray-100 dark:bg-slate-700">
+      <div className="relative h-52 overflow-hidden light:bg-gray-100 dark:bg-slate-700">
         <motion.img
           key={currentImg}
           src={currentImg}
@@ -68,7 +72,11 @@ const Card: FC<CardProps> = ({ project, onClick }) => {
           {project.technologies?.slice(0, 3).map((tech, i) => (
             <span
               key={i}
-              className="text-xs px-2.5 py-1 rounded-md font-medium border light:bg-slate-100 light:text-slate-600 dark:bg-white/5 dark:text-slate-300 dark:border-white/10"
+              className="
+                text-xs px-2.5 py-1 rounded-md font-medium border 
+                light:bg-slate-100 light:text-slate-600 light:border-slate-200
+                dark:bg-white/5 dark:text-slate-300 dark:border-white/10
+              "
             >
               {tech}
             </span>

@@ -36,9 +36,11 @@ const About: FC = () => {
             {/* Yetenekler Kartı */}
             <div className="w-full max-w-sm lg:mt-10 -mt-12 z-10 relative">
               <div
-                className="rounded-xl shadow-xl border backdrop-blur-md p-6 
-                    light:bg-white/90 light:border-slate-200 
-                    dark:bg-slate-800/90 dark:border-white/10"
+                className="
+                  rounded-xl shadow-xl border backdrop-blur-md p-6 
+                  light:bg-white/90 light:border-slate-200 
+                  dark:bg-slate-800/90 dark:border-white/10
+                "
               >
                 <h2 className="font-bold text-xl text-center mb-4 light:text-slate-800 dark:text-white">
                   Teknik Yetenekler

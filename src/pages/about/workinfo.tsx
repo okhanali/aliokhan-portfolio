@@ -11,7 +11,8 @@ const WorkInfo: FC = () => {
       >
         DENEYİM
       </h2>
-      <ol className="flex flex-col border-l-2 md:border-l-0 border-slate-300 dark:border-slate-700 md:border-none pl-4 md:pl-0">
+
+      <ol className="flex flex-col border-l-2 md:border-l-0 md:border-none pl-4 md:pl-0 light:border-slate-300 dark:border-slate-700">
         {EXPERIENCE.map((item, i) => (
           <li
             key={i}
@@ -27,13 +28,15 @@ const WorkInfo: FC = () => {
               </time>
             </div>
 
-            {/* Zaman Çizgisi  */}
+            {/* Zaman Çizgisi */}
             <div className="hidden md:flex flex-col items-center relative" aria-hidden="true">
-              {/* Nokta */}
+              {/* Nokta - Border rengi dahil prefixlendi */}
               <div
-                className="w-4 h-4 rounded-full z-10 mt-1.5 shadow-md border-2 border-white dark:border-slate-900 
-                light:bg-purple-500 light:shadow-purple-300 
-                dark:bg-cyan-400 dark:shadow-cyan-900"
+                className="
+                  w-4 h-4 rounded-full z-10 mt-1.5 shadow-md border-2 
+                  light:border-white light:bg-purple-500 light:shadow-purple-300 
+                  dark:border-slate-900 dark:bg-cyan-400 dark:shadow-cyan-900
+                "
               />
 
               {/* Çizgi */}
