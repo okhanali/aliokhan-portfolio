@@ -1,7 +1,5 @@
 # 👨‍💻 Ali Okhan | Frontend Developer Portfolio
 
-![Project Banner](https://www.aliokhan.com/og-image.png)
-
 > **React**, **TypeScript** ve **Tailwind CSS** ekosistemi kullanılarak geliştirilmiş; modern, ölçeklenebilir ve yüksek performanslı kişisel portfolyo web sitesi.
 
 <div align="center">
