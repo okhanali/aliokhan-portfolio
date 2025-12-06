@@ -1,4 +1,4 @@
-import { useState, type FC } from 'react';
+import { useState, useEffect, type FC } from 'react';
 import { motion, AnimatePresence, type Variants } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
@@ -9,44 +9,63 @@ const menuVars: Variants = {
   initial: { x: '100%' },
   animate: {
     x: 0,
-    transition: { duration: 0.3, ease: 'easeOut' },
+    transition: {
+      duration: 0.4,
+      ease: [0.33, 1, 0.68, 1],
+    },
   },
   exit: {
     x: '100%',
-    transition: { duration: 0.3, ease: 'easeIn' },
+    transition: {
+      duration: 0.3,
+      ease: [0.33, 1, 0.68, 1],
+    },
   },
 };
 
 const containerVars: Variants = {
-  initial: { transition: { staggerChildren: 0.05, staggerDirection: -1 } },
-  open: { transition: { delayChildren: 0.1, staggerChildren: 0.05, staggerDirection: 1 } },
+  initial: {
+    transition: { staggerChildren: 0.05, staggerDirection: -1 },
+  },
+  open: {
+    transition: {
+      delayChildren: 0.2,
+      staggerChildren: 0.07,
+      staggerDirection: 1,
+    },
+  },
 };
 
 const mobileLinkVars: Variants = {
   initial: { y: 20, opacity: 0 },
-  open: { y: 0, opacity: 1, transition: { duration: 0.3, ease: 'easeOut' } },
+  open: {
+    y: 0,
+    opacity: 1,
+    transition: { duration: 0.4, ease: 'easeOut' },
+  },
 };
 
 const ToggleMenu: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen((prev) => {
-      const newState = !prev;
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
 
-      if (typeof document !== 'undefined') {
-        document.body.style.overflow = newState ? 'hidden' : 'unset';
-      }
-      return newState;
-    });
-  };
-
-  const closeMenu = () => {
-    setIsOpen(false);
-    if (typeof document !== 'undefined') {
-      document.body.style.overflow = 'unset';
+      document.body.style.touchAction = 'none';
+    } else {
+      document.body.style.overflow = '';
+      document.body.style.touchAction = '';
     }
-  };
+
+    return () => {
+      document.body.style.overflow = '';
+      document.body.style.touchAction = '';
+    };
+  }, [isOpen]);
+
+  const toggleMenu = () => setIsOpen((prev) => !prev);
+  const closeMenu = () => setIsOpen(false);
 
   return (
     <div className="md:hidden">
@@ -84,7 +103,7 @@ const ToggleMenu: FC = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={closeMenu}
-              className="fixed inset-0 z-40 bg-black/60"
+              className="fixed inset-0 z-40 bg-black/60 backdrop-blur-sm" //
               aria-hidden="true"
             />
 
@@ -98,8 +117,9 @@ const ToggleMenu: FC = () => {
               role="dialog"
               aria-modal="true"
               aria-label="Mobil Navigasyon Menüsü"
-              className="fixed top-0 right-0 h-screen w-72 z-50 flex flex-col items-center justify-center shadow-2xl border-l light:bg-white light:border-slate-200 bg-slate-900 border-white/10"
-              style={{ willChange: 'transform' }}
+              className="fixed top-0 right-0 h-[100dvh] w-72 z-50 flex flex-col items-center justify-center 
+                         shadow-2xl border-l light:bg-white light:border-slate-200 bg-slate-900 border-white/10
+                         will-change-transform transform-gpu"
             >
               {/* Linkler Container */}
               <motion.nav
