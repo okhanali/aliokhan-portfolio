@@ -18,7 +18,7 @@
 
 Bu proje, modern web geliştirme standartlarına uygun olarak tasarlanmış interaktif bir portfolyo sitesidir. Kod kalitesi, tip güvenliği (Type Safety) ve kullanıcı deneyimi (UX) ön planda tutulmuştur. Ziyaretçilere akıcı bir deneyim sunmak için gelişmiş animasyonlar ve optimize edilmiş varlık yönetimi kullanılmıştır.
 
-### 🔗 Canlı Demo (Live)
+### 🔗 Canlı (Live)
 
 > **[www.aliokhan.com](https://www.aliokhan.com)** adresinden projeyi inceleyebilirsiniz.
 
