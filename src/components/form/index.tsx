@@ -60,7 +60,7 @@ const Form: FC = () => {
   return (
     <Formik initialValues={INITIAL_VALUES} validationSchema={contactSchema} onSubmit={handleSubmit}>
       {({ isSubmitting }) => (
-        <FormikForm className="p-6 md:p-8 rounded-2xl shadow-2xl border backdrop-blur-md transition-colors duration-300 bg-white border-slate-200 bg-slate-800/50 border-white/10">
+        <FormikForm className="p-6 md:p-8 rounded-2xl shadow-2xl border backdrop-blur-md transition-colors duration-300 bg-transparent light:bg-white border-slate-200 bg-slate-800/50 border-white/10">
           <div className="space-y-5">
             {FORM_FIELDS.map((field) => (
               <div key={field.id} className="flex flex-col gap-2">
@@ -80,8 +80,8 @@ const Form: FC = () => {
                   placeholder={field.placeholder}
                   className={`w-full p-4 rounded-xl border outline-none transition-all duration-300 
                     focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500 
-                    bg-slate-50 border-slate-200 text-slate-900 placeholder-slate-400 focus:bg-white 
-                    bg-slate-900/50 border-slate-700 text-white placeholder-slate-500 focus:bg-slate-900
+                    light:bg-slate-50 border-slate-200 light:text-slate-900 text-white light:placeholder-slate-400  
+                    border-slate-700 placeholder-slate-500
                     ${field.component === 'textarea' ? 'resize-none' : ''}`}
                 />
 
