@@ -9,7 +9,7 @@ export default defineConfig({
     tailwindcss(),
 
     Sitemap({
-      hostname: 'https://aliokhan-portfolio.vercel.app',
+      hostname: 'https://www.aliokhan.com',
       dynamicRoutes: ['/', '/about', '/project', '/contact'],
 
       // Robots.txt

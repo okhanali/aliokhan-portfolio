@@ -20,7 +20,7 @@ const SEO: FC<SeoProps> = ({
   noIndex = false,
 }) => {
   const location = useLocation();
-  const siteUrl = 'https://aliokhan-portfolio.vercel.app';
+  const siteUrl = 'https://www.aliokhan.com';
   const currentUrl = `${siteUrl}${location.pathname}`;
 
   // --- STRUCTURED DATA (JSON-LD) ---

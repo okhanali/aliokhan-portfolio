@@ -1,6 +1,6 @@
 # 👨‍💻 Ali Okhan | Frontend Developer Portfolio
 
-![Project Banner](https://aliokhan-portfolio.vercel.app/og-image.png)
+![Project Banner](https://www.aliokhan.com/og-image.png)
 
 > **React**, **TypeScript** ve **Tailwind CSS** ekosistemi kullanılarak geliştirilmiş; modern, ölçeklenebilir ve yüksek performanslı kişisel portfolyo web sitesi.
 
@@ -20,9 +20,9 @@
 
 Bu proje, modern web geliştirme standartlarına uygun olarak tasarlanmış interaktif bir portfolyo sitesidir. Kod kalitesi, tip güvenliği (Type Safety) ve kullanıcı deneyimi (UX) ön planda tutulmuştur. Ziyaretçilere akıcı bir deneyim sunmak için gelişmiş animasyonlar ve optimize edilmiş varlık yönetimi kullanılmıştır.
 
-### 🔗 Canlı Demo
+### 🔗 Canlı Demo (Live)
 
-[https://aliokhan-portfolio.vercel.app](https://aliokhan-portfolio.vercel.app)
+> **[www.aliokhan.com](https://www.aliokhan.com)** adresinden projeyi inceleyebilirsiniz.
 
 ---
 
@@ -56,11 +56,12 @@ Projede kullanılan teknolojiler ve kütüphaneler, performans ve sürdürülebi
 
 - **React Helmet Async:** Dinamik `<head>` yönetimi ve meta etiketleri.
 - **Vite Plugin Sitemap:** Otomatik `sitemap.xml` ve `robots.txt` oluşturma.
+- **Google Search Console:** İndeksleme ve performans takibi entegrasyonu.
 
 ### ☁️ Backend & Services
 
 - **Firebase:** Veri tabanı ve backend servisleri.
-- **Vercel:** CI/CD süreçleri ve hosting.
+- **Vercel:** CI/CD süreçleri ve hosting (Custom Domain: aliokhan.com).
 
 ---
 
