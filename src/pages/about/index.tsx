@@ -39,10 +39,10 @@ const About: FC = () => {
                 className="
                   rounded-xl shadow-xl border backdrop-blur-md p-6 
                   light:bg-white/90 light:border-slate-200 
-                  dark:bg-slate-800/90 dark:border-white/10
+                  bg-slate-800/90 border-white/10
                 "
               >
-                <h2 className="font-bold text-xl text-center mb-4 light:text-slate-800 dark:text-white">
+                <h2 className="font-bold text-xl text-center mb-4 light:text-slate-800 text-white">
                   Teknik Yetenekler
                 </h2>
                 <ul
@@ -54,11 +54,11 @@ const About: FC = () => {
                       key={i}
                       className="group flex flex-col items-center justify-center gap-1 cursor-pointer"
                     >
-                      <div className="p-2 rounded-lg transition-transform duration-300 group-hover:-translate-y-1 group-hover:shadow-lg light:bg-slate-100 dark:bg-white/5">
+                      <div className="p-2 rounded-lg transition-transform duration-300 group-hover:-translate-y-1 group-hover:shadow-lg light:bg-slate-100 bg-white/5">
                         <skill.icon className={`text-2xl ${skill.className}`} aria-hidden="true" />
                       </div>
 
-                      <span className="text-[10px] font-mono font-bold uppercase transition-colors light:text-slate-600 group-hover:light:text-purple-600 dark:text-slate-400 group-hover:dark:text-cyan-400">
+                      <span className="text-[10px] font-mono font-bold uppercase transition-colors light:text-slate-600 group-hover:light:text-purple-600 text-slate-400 group-hover:text-cyan-400">
                         {skill.name}
                       </span>
                     </li>

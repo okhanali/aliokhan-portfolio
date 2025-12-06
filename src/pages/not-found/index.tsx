@@ -27,10 +27,10 @@ const NotFound: FC = () => {
 
         {/* --- AÇIKLAMA --- */}
         <div className="space-y-4">
-          <h2 className="text-2xl md:text-4xl font-bold light:text-slate-800 dark:text-white">
+          <h2 className="text-2xl md:text-4xl font-bold light:text-slate-800 text-white">
             Oops! Kaybolmuş gibisin.
           </h2>
-          <p className="text-base md:text-lg font-medium light:text-slate-600 dark:text-slate-400 max-w-md mx-auto">
+          <p className="text-base md:text-lg font-medium light:text-slate-600 text-slate-400 max-w-md mx-auto">
             Aradığın sayfa uzayın derinliklerinde kaybolmuş olabilir veya hiç var olmamış olabilir.
           </p>
         </div>

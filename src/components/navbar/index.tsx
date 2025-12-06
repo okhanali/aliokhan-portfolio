@@ -21,7 +21,7 @@ const Navbar: FC = () => {
               `transition-all duration-300 ${
                 isActive
                   ? 'bg-gradient-to-r from-cyan-600 to-purple-600 bg-clip-text text-transparent font-bold scale-105'
-                  : 'light:text-slate-700 dark:text-slate-200 hover:text-cyan-600 dark:hover:text-cyan-400'
+                  : 'light:text-slate-700 text-slate-200 hover:text-cyan-600 hover:text-cyan-400'
               }`
             }
           >
@@ -30,7 +30,7 @@ const Navbar: FC = () => {
         ))}
 
         {/* --- AYIRICI ÇİZGİ & SOSYAL MEDYA --- */}
-        <div className="flex items-center gap-5 pl-4 border-l border-slate-300 dark:border-slate-700 h-8">
+        <div className="flex items-center gap-5 pl-4 border-l border-slate-300 border-slate-700 h-8">
           {/* LinkedIn - Dış Link */}
           <a
             href={SOCIAL_LINKS.linkedin || 'https://linkedin.com'}
@@ -40,7 +40,7 @@ const Navbar: FC = () => {
             className="group"
           >
             <FaLinkedin
-              className="text-2xl lg:text-3xl light:text-slate-600 dark:text-slate-300 transition-all duration-300 group-hover:scale-110 group-hover:text-[#0077B5] dark:group-hover:text-cyan-400"
+              className="text-2xl lg:text-3xl light:text-slate-600 text-slate-300 transition-all duration-300 group-hover:scale-110 group-hover:text-[#0077B5] group-hover:text-cyan-400"
               aria-hidden="true"
             />
           </a>
@@ -54,7 +54,7 @@ const Navbar: FC = () => {
             className="group"
           >
             <FaGithub
-              className="text-2xl lg:text-3xl light:text-slate-600 dark:text-slate-300 transition-all duration-300 group-hover:scale-110 group-hover:text-black dark:group-hover:text-white light:group-hover:text-purple-500"
+              className="text-2xl lg:text-3xl light:text-slate-600 text-slate-300 transition-all duration-300 group-hover:scale-110 group-hover:text-black group-hover:text-white light:group-hover:text-purple-500"
               aria-hidden="true"
             />
           </a>

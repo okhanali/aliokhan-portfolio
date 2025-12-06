@@ -89,7 +89,7 @@ const Projects: FC = () => {
                       className="
                         w-full max-w-4xl max-h-[90vh] rounded-2xl overflow-hidden shadow-2xl pointer-events-auto flex flex-col relative border
                         light:bg-white light:border-transparent 
-                        dark:bg-slate-900 dark:border-white/10
+                        bg-slate-900 border-white/10
                       "
                     >
                       <button
@@ -100,7 +100,7 @@ const Projects: FC = () => {
                       </button>
 
                       {/* SLIDER ALANI */}
-                      <div className="w-full h-64 md:h-96 relative overflow-hidden group light:bg-gray-100 dark:bg-slate-800">
+                      <div className="w-full h-64 md:h-96 relative overflow-hidden group light:bg-gray-100 bg-slate-800">
                         <AnimatePresence mode="wait">
                           <motion.img
                             key={currentSlideIndex}
@@ -134,9 +134,9 @@ const Projects: FC = () => {
                       </div>
 
                       {/* İÇERİK ALANI */}
-                      <div className="p-6 md:p-8 overflow-y-auto flex-1 light:bg-white dark:bg-slate-900">
+                      <div className="p-6 md:p-8 overflow-y-auto flex-1 light:bg-white bg-slate-900">
                         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
-                          <h2 className="text-2xl md:text-3xl font-bold light:text-slate-900 dark:text-white">
+                          <h2 className="text-2xl md:text-3xl font-bold light:text-slate-900 text-white">
                             {selectedProject.title}
                           </h2>
 
@@ -147,7 +147,7 @@ const Projects: FC = () => {
                             className="
                               flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold transition-all hover:scale-105 shadow-md 
                               light:bg-slate-800 light:text-white light:hover:bg-slate-700
-                              dark:bg-slate-700 dark:text-white dark:hover:bg-slate-600
+                              bg-slate-700 text-white hover:bg-slate-600
                             "
                           >
                             <FaGithub size={20} />
@@ -162,7 +162,7 @@ const Projects: FC = () => {
                               className="
                                 px-3 py-1 text-sm font-medium border rounded-full 
                                 light:bg-slate-100 light:text-slate-700 light:border-slate-200
-                                dark:bg-white/5 dark:text-slate-300 dark:border-white/10
+                                bg-white/5 text-slate-300 border-white/10
                               "
                             >
                               {tech}
@@ -170,7 +170,7 @@ const Projects: FC = () => {
                           ))}
                         </div>
 
-                        <p className="text-lg leading-relaxed light:text-slate-600 dark:text-slate-300">
+                        <p className="text-lg leading-relaxed light:text-slate-600 text-slate-300">
                           {selectedProject.description}
                         </p>
                       </div>

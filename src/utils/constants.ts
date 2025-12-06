@@ -50,19 +50,19 @@ export const SKILLS: ISkills[] = [
   {
     name: 'React',
     icon: SiReact,
-    className: 'text-sky-600 dark:text-[#61DAFB] size-10 max-sm:size-5',
+    className: 'text-sky-600 text-[#61DAFB] size-10 max-sm:size-5',
   },
   {
     name: 'JavaScript',
     icon: SiJavascript,
-    className: 'light:text-[#d6bf04] dark:text-[#F7DF1E] size-10 max-sm:size-5',
+    className: 'light:text-[#d6bf04] text-[#F7DF1E] size-10 max-sm:size-5',
   },
   { name: 'TypeScript', icon: SiTypescript, className: 'text-[#3178C6] size-10 max-sm:size-5' },
 
   {
     name: 'Next.js',
     icon: SiNextdotjs,
-    className: 'light:text-black dark:text-white size-10 max-sm:size-5',
+    className: 'light:text-black text-white size-10 max-sm:size-5',
   },
 
   { name: 'Tailwind', icon: SiTailwindcss, className: 'text-[#06B6D4] size-10 max-sm:size-5' },
@@ -72,7 +72,7 @@ export const SKILLS: ISkills[] = [
   {
     name: 'GitHub',
     icon: SiGithub,
-    className: 'light:text-[#181717] dark:text-white size-10 max-sm:size-5',
+    className: 'light:text-[#181717] text-white size-10 max-sm:size-5',
   },
 ];
 

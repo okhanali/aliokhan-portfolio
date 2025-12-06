@@ -61,15 +61,15 @@ const ToggleMenu: FC = () => {
         <div className="space-y-1.5" aria-hidden="true">
           <motion.span
             animate={{ rotateZ: isOpen ? 45 : 0, y: isOpen ? 8 : 0 }}
-            className="block h-0.5 w-7 rounded-full bg-current transition-colors light:bg-slate-900 dark:bg-white"
+            className="block h-0.5 w-7 rounded-full bg-current transition-colors light:bg-slate-900 bg-white"
           />
           <motion.span
             animate={{ width: isOpen ? 0 : 24, opacity: isOpen ? 0 : 1 }}
-            className="block h-0.5 w-5 rounded-full bg-current transition-colors light:bg-slate-900 dark:bg-white group-hover:w-7"
+            className="block h-0.5 w-5 rounded-full bg-current transition-colors light:bg-slate-900 bg-white group-hover:w-7"
           />
           <motion.span
             animate={{ rotateZ: isOpen ? -45 : 0, y: isOpen ? -8 : 0 }}
-            className="block h-0.5 w-7 rounded-full bg-current transition-colors light:bg-slate-900 dark:bg-white"
+            className="block h-0.5 w-7 rounded-full bg-current transition-colors light:bg-slate-900 bg-white"
           />
         </div>
       </button>
@@ -98,7 +98,7 @@ const ToggleMenu: FC = () => {
               role="dialog"
               aria-modal="true"
               aria-label="Mobil Navigasyon Menüsü"
-              className="fixed top-0 right-0 h-screen w-72 z-50 flex flex-col items-center justify-center shadow-2xl border-l light:bg-white light:border-slate-200 dark:bg-slate-900 dark:border-white/10"
+              className="fixed top-0 right-0 h-screen w-72 z-50 flex flex-col items-center justify-center shadow-2xl border-l light:bg-white light:border-slate-200 bg-slate-900 border-white/10"
               style={{ willChange: 'transform' }}
             >
               {/* Linkler Container */}
@@ -121,7 +121,7 @@ const ToggleMenu: FC = () => {
                 {/* Çizgi Ayırıcı */}
                 <motion.div
                   variants={mobileLinkVars}
-                  className="w-1/2 h-px light:bg-slate-200 dark:bg-white/10 my-2"
+                  className="w-1/2 h-px light:bg-slate-200 bg-white/10 my-2"
                   role="separator"
                 />
 
@@ -133,7 +133,7 @@ const ToggleMenu: FC = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="LinkedIn Profilim"
-                      className="transition-transform hover:scale-110 light:text-cyan-600 dark:text-cyan-400"
+                      className="transition-transform hover:scale-110 light:text-cyan-600 text-cyan-400"
                     >
                       <FaLinkedin size={28} aria-hidden="true" />
                     </a>
@@ -142,7 +142,7 @@ const ToggleMenu: FC = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="GitHub Profilim"
-                      className="transition-transform hover:scale-110 light:text-purple-600 dark:text-purple-400"
+                      className="transition-transform hover:scale-110 light:text-purple-600 text-purple-400"
                     >
                       <FaGithub size={28} aria-hidden="true" />
                     </a>
@@ -180,7 +180,7 @@ const MobileNavLink = ({
           `block text-2xl font-bold font-mono tracking-wide transition-all duration-300 ${
             isActive
               ? 'bg-gradient-to-r from-cyan-500 to-purple-600 bg-clip-text text-transparent scale-110'
-              : 'light:text-slate-700 dark:text-slate-300 hover:light:text-slate-900 hover:dark:text-white'
+              : 'light:text-slate-700 text-slate-300 hover:light:text-slate-900 hover:text-white'
           }`
         }
       >

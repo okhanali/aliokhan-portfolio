@@ -13,7 +13,7 @@ const ThemeToggle: FC = () => {
       onClick={toggleTheme}
       aria-label={isDark ? 'Aydınlık moda geç' : 'Karanlık moda geç'}
       title={isDark ? 'Aydınlık Mod' : 'Karanlık Mod'}
-      className="p-2.5 rounded-full border shadow-sm transition-all duration-300 cursor-pointer hover:scale-110 active:scale-90 light:bg-white light:border-slate-200 light:text-slate-600 light:hover:text-purple-600 light:hover:border-purple-200 light:hover:shadow-md dark:bg-white/10 dark:border-white/10 dark:text-yellow-400 dark:hover:bg-white/20"
+      className="p-2.5 rounded-full border shadow-sm transition-all duration-300 cursor-pointer hover:scale-110 active:scale-90 light:bg-white light:border-slate-200 light:text-slate-600 light:hover:text-purple-600 light:hover:border-purple-200 light:hover:shadow-md bg-white/10 border-white/10 text-yellow-400 hover:bg-white/20"
     >
       {isDark ? (
         <FaSun

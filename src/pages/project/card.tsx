@@ -38,7 +38,7 @@ const Card: FC<CardProps> = ({ project, onClick }) => {
       className="
         group relative rounded-2xl overflow-hidden cursor-pointer flex flex-col h-full transition-all duration-300 shadow-md hover:shadow-xl border 
         light:bg-white light:border-slate-200 
-        dark:bg-slate-800/50 dark:border-white/10
+        bg-slate-800/50 border-white/10
       "
       role="button"
       tabIndex={0}
@@ -49,7 +49,7 @@ const Card: FC<CardProps> = ({ project, onClick }) => {
       }}
     >
       {/* --- RESİM ALANI --- */}
-      <div className="relative h-52 overflow-hidden light:bg-gray-100 dark:bg-slate-700">
+      <div className="relative h-52 overflow-hidden light:bg-gray-100 bg-slate-700">
         <motion.img
           key={currentImg}
           src={currentImg}
@@ -64,7 +64,7 @@ const Card: FC<CardProps> = ({ project, onClick }) => {
 
       {/* --- KART İÇERİĞİ --- */}
       <div className="p-5 flex flex-col flex-grow gap-4">
-        <h3 className="text-xl font-bold line-clamp-1 light:text-slate-800 dark:text-white">
+        <h3 className="text-xl font-bold line-clamp-1 light:text-slate-800 text-white">
           {project.title}
         </h3>
 
@@ -75,7 +75,7 @@ const Card: FC<CardProps> = ({ project, onClick }) => {
               className="
                 text-xs px-2.5 py-1 rounded-md font-medium border 
                 light:bg-slate-100 light:text-slate-600 light:border-slate-200
-                dark:bg-white/5 dark:text-slate-300 dark:border-white/10
+                bg-white/5 text-slate-300 border-white/10
               "
             >
               {tech}
@@ -83,7 +83,7 @@ const Card: FC<CardProps> = ({ project, onClick }) => {
           ))}
 
           {project.technologies && project.technologies.length > 3 && (
-            <span className="text-xs px-1 py-1 font-medium light:text-slate-500 dark:text-slate-500">
+            <span className="text-xs px-1 py-1 font-medium light:text-slate-500 text-slate-500">
               +{project.technologies.length - 3}
             </span>
           )}

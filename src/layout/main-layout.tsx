@@ -18,7 +18,7 @@ const MainLayout: FC = () => {
   }, [pathname]);
 
   return (
-    <div className="flex flex-col min-h-screen relative overflow-hidden bg-transparent text-slate-900 dark:text-slate-200 transition-colors duration-300">
+    <div className="flex flex-col min-h-screen relative overflow-hidden bg-transparent text-slate-900 text-slate-200 transition-colors duration-300">
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] px-4 py-2 bg-cyan-600 text-white rounded-md font-bold shadow-lg"

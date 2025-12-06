@@ -27,7 +27,7 @@ body {
   font-family: var(--font-sans);
   @apply transition-colors duration-300 ease-in-out;
 
-  @apply text-slate-950 dark:text-slate-100;
+  @apply text-slate-950 text-slate-100;
 }
 
 :root.dark body {
@@ -37,7 +37,7 @@ body {
 @layer components {
   .nav-link {
     /* GÜNCELLENDİ: Navigasyon linkleri light modda biraz daha koyulaştırıldı (okunabilirlik için) */
-    @apply text-slate-600 dark:text-slate-300 transition-all duration-300 font-medium cursor-pointer;
+    @apply text-slate-600 text-slate-300 transition-all duration-300 font-medium cursor-pointer;
   }
 
   .nav-link:hover {
@@ -61,7 +61,7 @@ body {
     light:bg-white light:text-slate-950 light:border-slate-300 light:hover:bg-slate-100 
     
     /* --- DARK MODE --- */
-    dark:bg-transparent dark:text-white dark:border-white/20 dark:hover:bg-white/10;
+    bg-transparent text-white border-white/20 hover:bg-white/10;
   }
 }
 
