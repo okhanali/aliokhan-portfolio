@@ -60,7 +60,7 @@ const Home: FC = () => {
                 rounded-full font-bold transition-all duration-300 shadow-lg 
                 border-2 border-cyan-500/50 
                 
-                light:text-slate-900 bg-white/50 
+                light:text-slate-900 
                 hover:bg-linear-to-r hover:from-cyan-500 hover:to-purple-600 hover:text-white hover:border-transparent
                 
                 text-white bg-transparent hover:shadow-cyan-500/40

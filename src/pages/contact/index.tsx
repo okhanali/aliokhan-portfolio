@@ -26,7 +26,7 @@ const Contact: FC = () => {
             İletişime Geç
           </h1>
 
-          <p className="text-base md:text-lg leading-relaxed font-medium light:text-slate-600 dark:text-slate-300 max-w-2xl mx-auto lg:mx-0">
+          <p className="text-base md:text-lg leading-relaxed font-medium light:text-slate-600 text-slate-300 max-w-2xl mx-auto lg:mx-0">
             Yeni fırsatlara ve iş birliklerine her zaman açığım. Modern web teknolojileriyle
             geliştireceğimiz projelerde çözüm ortağınız olmamı isterseniz veya ekibinize katılmamla
             ilgili görüşmek isterseniz formu doldurabilirsiniz.
@@ -41,18 +41,18 @@ const Contact: FC = () => {
               className="
                 group flex items-center gap-4 p-4 rounded-2xl transition-all duration-300 border 
                 light:bg-white light:shadow-sm light:hover:shadow-md light:border-slate-200
-                dark:bg-white/5 dark:hover:bg-white/10 dark:border-white/5
+                bg-white/5 hover:bg-white/10 border-white/5
               "
             >
-              <div className="p-3 rounded-full light:bg-cyan-50 dark:bg-cyan-900/20 group-hover:scale-110 transition-transform duration-300">
-                <FaLinkedin className="text-3xl light:text-[#0077B5] dark:text-cyan-400" />
+              <div className="p-3 rounded-full light:bg-cyan-50 bg-cyan-900/20 group-hover:scale-110 transition-transform duration-300">
+                <FaLinkedin className="text-3xl light:text-[#0077B5] text-cyan-400" />
               </div>
 
               <div className="flex flex-col items-start text-left">
-                <span className="text-xs font-bold uppercase tracking-wider transition-colors light:text-slate-500 light:group-hover:text-cyan-600 dark:text-slate-400 dark:group-hover:text-cyan-300">
+                <span className="text-xs font-bold uppercase tracking-wider transition-colors light:text-slate-500 light:group-hover:text-cyan-600 text-slate-400 group-hover:text-cyan-300">
                   LinkedIn
                 </span>
-                <span className="text-lg font-bold transition-colors light:text-slate-800 light:group-hover:text-cyan-600 dark:text-white dark:group-hover:text-cyan-300">
+                <span className="text-lg font-bold transition-colors light:text-slate-800 light:group-hover:text-cyan-600 text-white group-hover:text-cyan-300">
                   @aliokhan
                 </span>
               </div>
