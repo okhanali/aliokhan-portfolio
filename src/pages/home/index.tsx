@@ -29,7 +29,7 @@ const Home: FC = () => {
               </span>
             </h1>
 
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl transition-colors leading-tight light:text-slate-800 dark:text-slate-100">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl transition-colors leading-tight light:text-slate-800 text-slate-100">
               <span className="bg-linear-to-r from-cyan-500 to-purple-600 bg-clip-text text-transparent inline-block">
                 Geleceğin Arayüzlerini
               </span>{' '}
@@ -37,7 +37,7 @@ const Home: FC = () => {
             </h2>
           </div>
 
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-medium max-w-xl md:max-w-3xl mx-auto leading-relaxed light:text-slate-700 dark:text-slate-200 transition-colors duration-300">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-medium max-w-xl md:max-w-3xl mx-auto leading-relaxed light:text-slate-700 text-slate-200 transition-colors duration-300">
             Modern web teknolojileriyle hızlı, ölçeklenebilir ve kullanıcı odaklı arayüzler
             geliştiriyorum.
           </p>
@@ -63,7 +63,7 @@ const Home: FC = () => {
                 light:text-slate-900 bg-white/50 
                 hover:bg-linear-to-r hover:from-cyan-500 hover:to-purple-600 hover:text-white hover:border-transparent
                 
-                dark:text-white dark:bg-transparent dark:hover:shadow-cyan-500/40
+                text-white bg-transparent hover:shadow-cyan-500/40
               "
               aria-label="İletişim sayfasına git"
             >
