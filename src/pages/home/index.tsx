@@ -22,7 +22,7 @@ const Home: FC = () => {
         >
           {/* --- BAŞLIK ALANI --- */}
           <div className="flex flex-col gap-3 md:gap-6">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl transition-colors tracking-tight light:text-slate-950 dark:text-white">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl transition-colors tracking-tight light:text-slate-950 text-white">
               Selam, Ben{' '}
               <span className="whitespace-nowrap bg-linear-to-r from-cyan-600 to-purple-600 bg-clip-text text-transparent">
                 Ali Okhan
